@@ -1,0 +1,27 @@
+
+
+server:
+  port: 8081
+
+spring:
+  redis:
+    host: 127.0.0.1  #服务器地址
+    port: 6379 #端口
+    database: 0  #数据库
+    password:   #密码
+    lettuce:
+      pool:
+        max-active: 8  #连接池最大连接数
+        max-wait: -1  #连接池最大阻塞等待时间
+        max-idle: 8 #连接池最大空闲连接
+        min-idle: 0 #连接池最小空闲连接，负数表示没有限制
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://:3306/redis_sql?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
