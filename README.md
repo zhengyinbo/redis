@@ -14,7 +14,7 @@ maven
 ```
 
 ### 启动类上加 @EnableCaching 注解
-</hr>
+-----
 
 @CacheConfig 配置类中会用到的一些共用的缓存配置；
 
