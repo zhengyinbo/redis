@@ -13,6 +13,8 @@ maven
 </dependency>
 ```
 
+启动类上加 @EnableCaching 注解
+
 @CacheConfig 配置类中会用到的一些共用的缓存配置；
 
 @Cacheable 表示该方法（类）支持缓存，spring 会在其被调用后将其返回值缓存起来，下次利用同样的参数来执行该方法是可以直接从缓存中获取结果，而不需要再次执行该方法；
